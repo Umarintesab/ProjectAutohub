@@ -1,0 +1,17 @@
+[
+  {
+    "id": "AHR-1781426993762-3039",
+    "carId": "4001",
+    "brand": "Toyota",
+    "model": "Corolla",
+    "rentPerDay": "8000",
+    "days": "1",
+    "totalAmount": 8000,
+    "agencyId": "1780950377675",
+    "renterId": "1780949864317",
+    "renterName": "Muhammad Talha",
+    "renterPhone": "03232517517",
+    "type": "rental",
+    "confirmedAt": "2026-06-14T08:49:53.762Z"
+  }
+]

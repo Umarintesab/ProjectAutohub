@@ -1,0 +1,925 @@
+[
+  {
+    "id": "2001",
+    "sellerId": "1780949959165",
+    "type": "new",
+    "brand": "Toyota",
+    "model": "Corolla Altis",
+    "year": "2025",
+    "color": "Pearl White",
+    "price": "6200000",
+    "description": "Toyota Corolla Altis 2025. 1.8L engine. CVT automatic. Most reliable sedan in Pakistan.",
+    "images": [
+      "car1.jpg"
+    ],
+    "status": "sold",
+    "buyerId": "1780949864317",
+    "buyerName": "Muhammad Talha",
+    "buyerPhone": "03232517517",
+    "transactionId": "AH-1781384287350-6735",
+    "confirmedAt": "2026-06-13T20:58:07.350Z"
+  },
+  {
+    "id": "2002",
+    "sellerId": "1780949959165",
+    "type": "new",
+    "brand": "Toyota",
+    "model": "Yaris ATIV",
+    "year": "2025",
+    "color": "Silver",
+    "price": "4800000",
+    "description": "Toyota Yaris ATIV 2025. 1.3L engine. Push start, auto AC, rear camera.",
+    "images": [
+      "car2.jpg"
+    ],
+    "status": "sold",
+    "buyerId": "1780949864317",
+    "buyerName": "Muhammad Talha",
+    "buyerPhone": "03232517517",
+    "transactionId": "AH-1781429825752-2786",
+    "confirmedAt": "2026-06-14T09:37:05.758Z"
+  },
+  {
+    "id": "2003",
+    "sellerId": "1780949959165",
+    "type": "new",
+    "brand": "Toyota",
+    "model": "Fortuner Sigma 4",
+    "year": "2025",
+    "color": "Black",
+    "price": "18500000",
+    "description": "Toyota Fortuner Sigma 4 2025. 2.7L 4WD SUV. Leather seats, sunroof, 7 seater.",
+    "images": [
+      "car3.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "2004",
+    "sellerId": "1780949959165",
+    "type": "new",
+    "brand": "Toyota",
+    "model": "Hilux Revo",
+    "year": "2025",
+    "color": "Gray",
+    "price": "14000000",
+    "description": "Toyota Hilux Revo 2025. 2.8L diesel 4x4 pickup. Most durable truck in Pakistan.",
+    "images": [
+      "car4.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "2005",
+    "sellerId": "1781205733169",
+    "type": "new",
+    "brand": "Toyota",
+    "model": "Land Cruiser",
+    "year": "2025",
+    "color": "White",
+    "price": "65000000",
+    "description": "Toyota Land Cruiser 2025. 4.0L V6. Premium luxury SUV. Full option, 8 seater.",
+    "images": [
+      "car5.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "2006",
+    "sellerId": "1781205733169",
+    "type": "new",
+    "brand": "Toyota",
+    "model": "Prius Hybrid",
+    "year": "2025",
+    "color": "Blue",
+    "price": "12000000",
+    "description": "Toyota Prius 2025 Hybrid. 1.8L petrol+electric. Best fuel economy 30+ km/L.",
+    "images": [
+      "car6.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "2007",
+    "sellerId": "1781207040079",
+    "type": "new",
+    "brand": "Toyota",
+    "model": "Rush",
+    "year": "2025",
+    "color": "Red",
+    "price": "9500000",
+    "description": "Toyota Rush 2025. 1.5L SUV. 7 seater, push start, rear camera.",
+    "images": [
+      "car7.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "2008",
+    "sellerId": "1781205645322",
+    "type": "new",
+    "brand": "Honda",
+    "model": "Civic RS Turbo",
+    "year": "2025",
+    "color": "Sonic Gray",
+    "price": "7800000",
+    "description": "Honda Civic RS Turbo 2025. 1.5L VTEC Turbo. 9-inch touchscreen, Honda Sensing.",
+    "images": [
+      "car8.jpg"
+    ],
+    "status": "sold",
+    "buyerId": "1781209301001",
+    "buyerName": "Muhammad Jawad",
+    "buyerPhone": "03215485693",
+    "transactionId": "AH-1781383796179-3264",
+    "confirmedAt": "2026-06-13T20:49:56.179Z"
+  },
+  {
+    "id": "2009",
+    "sellerId": "1781205645322",
+    "type": "new",
+    "brand": "Honda",
+    "model": "HR-V",
+    "year": "2025",
+    "color": "Platinum White",
+    "price": "8500000",
+    "description": "Honda HR-V 2025. 1.8L crossover SUV. Magic seat, sunroof, lane watch.",
+    "images": [
+      "car9.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "2010",
+    "sellerId": "1781205645322",
+    "type": "new",
+    "brand": "Honda",
+    "model": "City Aspire",
+    "year": "2025",
+    "color": "White",
+    "price": "5200000",
+    "description": "Honda City Aspire 2025. 1.5L i-VTEC. CVT automatic. Most popular Honda sedan.",
+    "images": [
+      "car10.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "2011",
+    "sellerId": "1781206872477",
+    "type": "new",
+    "brand": "Honda",
+    "model": "BR-V",
+    "year": "2025",
+    "color": "Silver",
+    "price": "6800000",
+    "description": "Honda BR-V 2025. 1.5L 7-seater SUV. Spacious cabin, leather seats, sunroof.",
+    "images": [
+      "car1.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "2012",
+    "sellerId": "1781205789679",
+    "type": "new",
+    "brand": "Kia",
+    "model": "Sportage Alpha",
+    "year": "2025",
+    "color": "Snow White Pearl",
+    "price": "9200000",
+    "description": "Kia Sportage Alpha 2025. 2.0L engine. Panoramic sunroof, leather seats.",
+    "images": [
+      "car2.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "2013",
+    "sellerId": "1781205789679",
+    "type": "new",
+    "brand": "Kia",
+    "model": "Stonic",
+    "year": "2025",
+    "color": "Aurora Black",
+    "price": "5600000",
+    "description": "Kia Stonic 2025. 1.0L Turbo. Sporty compact crossover. LED headlamps.",
+    "images": [
+      "car3.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "2014",
+    "sellerId": "1781205789679",
+    "type": "new",
+    "brand": "Kia",
+    "model": "Picanto",
+    "year": "2025",
+    "color": "Passion Red",
+    "price": "3200000",
+    "description": "Kia Picanto 2025. 1.0L automatic. Compact city car. Keyless entry.",
+    "images": [
+      "car4.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "2015",
+    "sellerId": "1781205839527",
+    "type": "new",
+    "brand": "Hyundai",
+    "model": "Tucson",
+    "year": "2025",
+    "color": "Magnetic Force",
+    "price": "10500000",
+    "description": "Hyundai Tucson 2025 AWD. 2.0L engine. SmartSense safety, Bose sound.",
+    "images": [
+      "car5.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "2016",
+    "sellerId": "1781205839527",
+    "type": "new",
+    "brand": "Hyundai",
+    "model": "Elantra",
+    "year": "2025",
+    "color": "Fluid Metal",
+    "price": "6900000",
+    "description": "Hyundai Elantra 2025. 1.6L engine. Sporty design. Blind spot monitoring.",
+    "images": [
+      "car6.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "2017",
+    "sellerId": "1781206788643",
+    "type": "new",
+    "brand": "Hyundai",
+    "model": "Grand i10",
+    "year": "2025",
+    "color": "Fiery Red",
+    "price": "3800000",
+    "description": "Hyundai Grand i10 2025. 1.2L petrol. Compact hatchback. Touchscreen, auto AC.",
+    "images": [
+      "car7.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "2018",
+    "sellerId": "1781206359492",
+    "type": "new",
+    "brand": "Suzuki",
+    "model": "Alto VXL",
+    "year": "2025",
+    "color": "Silky Silver",
+    "price": "2800000",
+    "description": "Suzuki Alto VXL 2025. 660cc engine. Best fuel economy. Most affordable new car.",
+    "images": [
+      "car8.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "2019",
+    "sellerId": "1781206359492",
+    "type": "new",
+    "brand": "Suzuki",
+    "model": "Swift GL+",
+    "year": "2025",
+    "color": "Premium Silver",
+    "price": "3500000",
+    "description": "Suzuki Swift GL+ 2025. 1.2L engine. Sporty hatchback. Alloy wheels, LED lights.",
+    "images": [
+      "car9.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "2020",
+    "sellerId": "1781206613860",
+    "type": "new",
+    "brand": "Suzuki",
+    "model": "Cultus VXL",
+    "year": "2025",
+    "color": "Midnight Black",
+    "price": "3200000",
+    "description": "Suzuki Cultus VXL 2025. 1.0L AGS. Push start, navigation. Best value hatchback.",
+    "images": [
+      "car10.jpg"
+    ],
+    "status": "sold",
+    "buyerId": "1781206613860",
+    "buyerName": "Muhammad Jawad",
+    "buyerPhone": "03403258679",
+    "transactionId": "AH-1781383594882-3493",
+    "confirmedAt": "2026-06-13T20:46:34.883Z"
+  },
+  {
+    "id": "2021",
+    "sellerId": "1781206931363",
+    "type": "new",
+    "brand": "Suzuki",
+    "model": "Wagon R VXL",
+    "year": "2025",
+    "color": "White",
+    "price": "3000000",
+    "description": "Suzuki Wagon R VXL 2025. 1.0L AGS. Spacious hatchback. Navigation, push start.",
+    "images": [
+      "car1.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "2022",
+    "sellerId": "1781207165429",
+    "type": "new",
+    "brand": "Suzuki",
+    "model": "Jimny",
+    "year": "2025",
+    "color": "Kinetic Yellow",
+    "price": "7500000",
+    "description": "Suzuki Jimny 2025. 1.5L 4WD. Iconic off-road mini SUV. Perfect for adventure.",
+    "images": [
+      "car2.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "2023",
+    "sellerId": "1781206437543",
+    "type": "new",
+    "brand": "MG",
+    "model": "HS",
+    "year": "2025",
+    "color": "Dover White",
+    "price": "9800000",
+    "description": "MG HS 2025. 1.5T engine. 360 camera, 12.3-inch touchscreen, panoramic sunroof.",
+    "images": [
+      "car3.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "2024",
+    "sellerId": "1781206437543",
+    "type": "new",
+    "brand": "MG",
+    "model": "ZS EV",
+    "year": "2025",
+    "color": "Star White",
+    "price": "11000000",
+    "description": "MG ZS EV 2025. Pure electric SUV. 320km range. Fast charging, panoramic sunroof.",
+    "images": [
+      "car4.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "2025",
+    "sellerId": "1781206984729",
+    "type": "new",
+    "brand": "BMW",
+    "model": "3 Series 320i",
+    "year": "2025",
+    "color": "Alpine White",
+    "price": "28000000",
+    "description": "BMW 3 Series 320i 2025. 2.0L TwinPower Turbo. Harman Kardon sound, M Sport.",
+    "images": [
+      "car5.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "2026",
+    "sellerId": "1781206984729",
+    "type": "new",
+    "brand": "BMW",
+    "model": "X5 xDrive",
+    "year": "2025",
+    "color": "Carbon Black",
+    "price": "55000000",
+    "description": "BMW X5 xDrive 2025. 3.0L inline-6. Panoramic sky lounge, Bowers Wilkins sound.",
+    "images": [
+      "car6.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "2027",
+    "sellerId": "1781206176087",
+    "type": "new",
+    "brand": "Mitsubishi",
+    "model": "Outlander",
+    "year": "2025",
+    "color": "White Diamond",
+    "price": "13500000",
+    "description": "Mitsubishi Outlander 2025. 2.5L SUV. S-AWC all-wheel control, 7 seater.",
+    "images": [
+      "car7.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "2028",
+    "sellerId": "1781206265851",
+    "type": "new",
+    "brand": "Nissan",
+    "model": "Sunny",
+    "year": "2025",
+    "color": "Brilliant Silver",
+    "price": "5500000",
+    "description": "Nissan Sunny 2025. 1.5L engine. Comfortable spacious sedan. Reliable daily driver.",
+    "images": [
+      "car8.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "2029",
+    "sellerId": "1781206265851",
+    "type": "new",
+    "brand": "Nissan",
+    "model": "Patrol",
+    "year": "2025",
+    "color": "Ivory Pearl",
+    "price": "45000000",
+    "description": "Nissan Patrol 2025. 5.6L V8 engine. 8 seater luxury SUV. Bose premium audio.",
+    "images": [
+      "car9.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "2030",
+    "sellerId": "1781207261014",
+    "type": "new",
+    "brand": "Jaeco",
+    "model": "T8 Pro",
+    "year": "2025",
+    "color": "Glacier White",
+    "price": "7200000",
+    "description": "Jaeco T8 Pro 2025. 1.5T SUV. 12-inch touchscreen, 360 camera, panoramic sunroof.",
+    "images": [
+      "car10.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "2031",
+    "sellerId": "1781207380625",
+    "type": "new",
+    "brand": "Haval",
+    "model": "H6 HEV",
+    "year": "2025",
+    "color": "Titanium Gray",
+    "price": "11500000",
+    "description": "Haval H6 HEV 2025 Hybrid. 1.5T+electric. 360 camera, panoramic sunroof, ADAS.",
+    "images": [
+      "car1.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "2032",
+    "sellerId": "1781207380625",
+    "type": "new",
+    "brand": "Haval",
+    "model": "Jolion",
+    "year": "2025",
+    "color": "Arctic White",
+    "price": "7800000",
+    "description": "Haval Jolion 2025. 1.5T engine. Sporty compact SUV. Best looking in its class.",
+    "images": [
+      "car2.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "2033",
+    "sellerId": "1781207434525",
+    "type": "new",
+    "brand": "Changan",
+    "model": "Alsvin",
+    "year": "2025",
+    "color": "Elegant White",
+    "price": "4200000",
+    "description": "Changan Alsvin 2025. 1.5L engine. 8-inch touchscreen, rear camera, 6 airbags.",
+    "images": [
+      "car3.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "2034",
+    "sellerId": "1781207434525",
+    "type": "new",
+    "brand": "Changan",
+    "model": "CS35 Plus",
+    "year": "2025",
+    "color": "Crystal Blue",
+    "price": "5800000",
+    "description": "Changan CS35 Plus 2025. 1.4T SUV. Panoramic sunroof, keyless entry, auto parking.",
+    "images": [
+      "car4.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "3001",
+    "sellerId": "1781207988057",
+    "type": "used",
+    "brand": "Suzuki",
+    "model": "Swift",
+    "year": "2014",
+    "color": "Red",
+    "price": "2025000",
+    "description": "Suzuki Swift 2014. Android panel, alloy wheels. Engine 100%, AC 100%. Documents complete.",
+    "images": [
+      "car5.jpg",
+      "car6.jpg",
+      "car7.jpg",
+      "car8.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "3002",
+    "sellerId": "1781207988057",
+    "type": "used",
+    "brand": "Honda",
+    "model": "Civic",
+    "year": "2021",
+    "color": "White",
+    "price": "6550000",
+    "description": "Honda Civic Oriel 1.8 UG 2021. Punjab registration. Bumper to bumper Genuine. 55k mileage.",
+    "images": [
+      "car9.jpg",
+      "car10.jpg",
+      "car1.jpg",
+      "car2.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "3003",
+    "sellerId": "1781207779819",
+    "type": "used",
+    "brand": "Toyota",
+    "model": "Corolla",
+    "year": "2020",
+    "color": "White",
+    "price": "5500000",
+    "description": "Toyota Corolla 2020. Genuine condition. No shower no paint. Driven within city.",
+    "images": [
+      "car3.jpg",
+      "car4.jpg",
+      "car5.jpg",
+      "car6.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "3004",
+    "sellerId": "1781207779819",
+    "type": "used",
+    "brand": "Haval",
+    "model": "H6",
+    "year": "2024",
+    "color": "Silver",
+    "price": "8550000",
+    "description": "Haval H6 2.0 Turbo 2024. Punjab Registered. 34k mileage. 360-degree camera, Cruise Control.",
+    "images": [
+      "car7.jpg",
+      "car8.jpg",
+      "car9.jpg",
+      "car10.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "3005",
+    "sellerId": "1781207779819",
+    "type": "used",
+    "brand": "Toyota",
+    "model": "Prado TX",
+    "year": "2021",
+    "color": "White",
+    "price": "33000000",
+    "description": "Toyota Prado TXL 2021. Fresh Import. 24,400 KM. Sunroof, 360 camera, leather seats. Auction Grade 5AA.",
+    "images": [
+      "car1.jpg",
+      "car2.jpg",
+      "car3.jpg",
+      "car4.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "3006",
+    "sellerId": "1781207835282",
+    "type": "used",
+    "brand": "Suzuki",
+    "model": "Cultus",
+    "year": "2019",
+    "color": "Blue",
+    "price": "2800000",
+    "description": "Suzuki Cultus VXL 2019. Islamabad registered. 45k mileage. Genuine condition.",
+    "images": [
+      "car5.jpg",
+      "car6.jpg",
+      "car7.jpg",
+      "car8.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "3007",
+    "sellerId": "1781207835282",
+    "type": "used",
+    "brand": "Toyota",
+    "model": "Yaris",
+    "year": "2022",
+    "color": "Gray",
+    "price": "4200000",
+    "description": "Toyota Yaris ATIV CVT 2022. Karachi registered. 30k mileage. First owner.",
+    "images": [
+      "car9.jpg",
+      "car10.jpg",
+      "car1.jpg",
+      "car2.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "3008",
+    "sellerId": "1781207835282",
+    "type": "used",
+    "brand": "Honda",
+    "model": "BRV",
+    "year": "2020",
+    "color": "Silver",
+    "price": "5800000",
+    "description": "Honda BRV 2020 S CVT. Rawalpindi registered. 7 seater. 48k mileage. Sunroof, leather seats.",
+    "images": [
+      "car3.jpg",
+      "car4.jpg",
+      "car5.jpg",
+      "car6.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "3009",
+    "sellerId": "1781207891254",
+    "type": "used",
+    "brand": "Kia",
+    "model": "Picanto",
+    "year": "2023",
+    "color": "Red",
+    "price": "3100000",
+    "description": "Kia Picanto 2023 automatic. Lahore registered. 15k mileage. Like brand new.",
+    "images": [
+      "car7.jpg",
+      "car8.jpg",
+      "car9.jpg",
+      "car10.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "3010",
+    "sellerId": "1781207891254",
+    "type": "used",
+    "brand": "Hyundai",
+    "model": "Tucson",
+    "year": "2021",
+    "color": "Black",
+    "price": "7200000",
+    "description": "Hyundai Tucson 2021 AWD. Lahore registered. 60k mileage. Sunroof, leather seats.",
+    "images": [
+      "car1.jpg",
+      "car2.jpg",
+      "car3.jpg",
+      "car4.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "3011",
+    "sellerId": "1781207891254",
+    "type": "used",
+    "brand": "Toyota",
+    "model": "Fortuner",
+    "year": "2019",
+    "color": "White",
+    "price": "12500000",
+    "description": "Toyota Fortuner 2019 Sigma 4. Karachi registered. 85k mileage. 4WD, leather seats.",
+    "images": [
+      "car5.jpg",
+      "car6.jpg",
+      "car7.jpg",
+      "car8.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "3012",
+    "sellerId": "1780951008822",
+    "type": "used",
+    "brand": "Honda",
+    "model": "City",
+    "year": "2018",
+    "color": "White",
+    "price": "3200000",
+    "description": "Honda City 1.3 i-VTEC 2018. Karachi registered. 70k mileage. Push start, auto AC.",
+    "images": [
+      "car9.jpg",
+      "car10.jpg",
+      "car1.jpg",
+      "car2.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "3013",
+    "sellerId": "1780951008822",
+    "type": "used",
+    "brand": "Suzuki",
+    "model": "Wagon R",
+    "year": "2020",
+    "color": "Gray",
+    "price": "2200000",
+    "description": "Suzuki Wagon R VXL 2020. Karachi registered. 55k mileage. AGS automatic.",
+    "images": [
+      "car3.jpg",
+      "car4.jpg",
+      "car5.jpg",
+      "car6.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "3014",
+    "sellerId": "1781207988057",
+    "type": "used",
+    "brand": "MG",
+    "model": "HS",
+    "year": "2022",
+    "color": "Blue",
+    "price": "7800000",
+    "description": "MG HS 2022. Lahore registered. 40k mileage. 360 camera, panoramic sunroof.",
+    "images": [
+      "car7.jpg",
+      "car8.jpg",
+      "car9.jpg",
+      "car10.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "3015",
+    "sellerId": "1781207779819",
+    "type": "used",
+    "brand": "BMW",
+    "model": "5 Series",
+    "year": "2020",
+    "color": "Black",
+    "price": "18000000",
+    "description": "BMW 520i 2020. Islamabad registered. 50k mileage. Leather seats, sunroof, Harman Kardon.",
+    "images": [
+      "car1.jpg",
+      "car2.jpg",
+      "car3.jpg",
+      "car4.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "3016",
+    "sellerId": "1781207835282",
+    "type": "used",
+    "brand": "Nissan",
+    "model": "Juke",
+    "year": "2019",
+    "color": "Orange",
+    "price": "4500000",
+    "description": "Nissan Juke 2019. Imported. 55k mileage. Turbo engine, leather seats, push start.",
+    "images": [
+      "car5.jpg",
+      "car6.jpg",
+      "car7.jpg",
+      "car8.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "3017",
+    "sellerId": "1781207891254",
+    "type": "used",
+    "brand": "Kia",
+    "model": "Sportage",
+    "year": "2022",
+    "color": "White",
+    "price": "7500000",
+    "description": "Kia Sportage 2022 Alpha. Karachi registered. 35k mileage. Panoramic sunroof.",
+    "images": [
+      "car9.jpg",
+      "car10.jpg",
+      "car1.jpg",
+      "car2.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "3018",
+    "sellerId": "1780951008822",
+    "type": "used",
+    "brand": "Toyota",
+    "model": "Hilux",
+    "year": "2020",
+    "color": "Gray",
+    "price": "9500000",
+    "description": "Toyota Hilux Revo 2020. 4x4 diesel. Karachi registered. 70k mileage.",
+    "images": [
+      "car3.jpg",
+      "car4.jpg",
+      "car5.jpg",
+      "car6.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "3019",
+    "sellerId": "1781207779819",
+    "type": "used",
+    "brand": "Honda",
+    "model": "Accord",
+    "year": "2018",
+    "color": "Black",
+    "price": "5500000",
+    "description": "Honda Accord 2.0 2018. Islamabad registered. 65k mileage. Sunroof, leather seats.",
+    "images": [
+      "car7.jpg",
+      "car8.jpg",
+      "car9.jpg",
+      "car10.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "3020",
+    "sellerId": "1781207835282",
+    "type": "used",
+    "brand": "Haval",
+    "model": "Jolion",
+    "year": "2023",
+    "color": "Silver",
+    "price": "6200000",
+    "description": "Haval Jolion 2023. Lahore registered. 20k mileage. Like new condition.",
+    "images": [
+      "car1.jpg",
+      "car2.jpg",
+      "car3.jpg",
+      "car4.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "1781209540263",
+    "brand": "Toyota",
+    "sellerId": "1780949959165",
+    "type": "new",
+    "model": "Corolla Altis",
+    "year": "2026",
+    "color": "White",
+    "price": "6200000",
+    "description": "Brand new Toyota Corolla Altis 2026. Most reliable sedan. Full option.",
+    "images": [
+      "1781209540256-Altis.png"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "1781373910579",
+    "brand": "Toyota",
+    "sellerId": "1780949959165",
+    "type": "new",
+    "model": "Land Crusor V8",
+    "year": "2026",
+    "color": "Black",
+    "price": "95000000",
+    "description": "The Toyota Land Cruiser V8 is a powerful SUV known for its rugged design and off-road capabilities, produced from 2008 to 2016. It features a robust V8 engine, providing excellent performance and reliability, making it a popular choice among off-road enthusiasts and families alike.",
+    "images": [
+      "1781373910567-Land-Cruiser-3.png"
+    ],
+    "status": "sold",
+    "buyerId": "1781209301001",
+    "buyerName": "Muhammad Jawad",
+    "buyerPhone": "03012264321"
+  }
+]

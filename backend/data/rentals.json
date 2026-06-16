@@ -1,0 +1,433 @@
+[
+  {
+    "id": "1780950783680",
+    "agencyId": "1780950377675",
+    "brand": "Suzuki",
+    "model": "Mehran",
+    "year": "2023",
+    "color": "White",
+    "rentPerDay": "3000",
+    "rentWithDriver": "5000",
+    "rentWithPetrol": "4500",
+    "rentWithDriverAndPetrol": "7000",
+    "description": "Suzuki Mehran budget car for city use. Security deposit 10,000 PKR refundable.",
+    "images": [
+      "car1.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "4001",
+    "agencyId": "1780950377675",
+    "brand": "Toyota",
+    "model": "Corolla",
+    "year": "2022",
+    "color": "White",
+    "rentPerDay": "8000",
+    "rentWithDriver": "11000",
+    "rentWithPetrol": "10000",
+    "rentWithDriverAndPetrol": "14000",
+    "description": "Toyota Corolla 2022 automatic. AC, GPS. Clean and well-maintained.",
+    "images": [
+      "car2.jpg"
+    ],
+    "status": "rented",
+    "renterId": "1780949864317",
+    "renterName": "Muhammad Talha",
+    "renterPhone": "03232517517",
+    "days": "1",
+    "transactionId": "AHR-1781426993762-3039",
+    "confirmedAt": "2026-06-14T08:49:53.762Z"
+  },
+  {
+    "id": "4002",
+    "agencyId": "1780950377675",
+    "brand": "Honda",
+    "model": "City",
+    "year": "2021",
+    "color": "Silver",
+    "rentPerDay": "6000",
+    "rentWithDriver": "9000",
+    "rentWithPetrol": "8000",
+    "rentWithDriverAndPetrol": "12000",
+    "description": "Honda City 2021. Push start, rear camera, auto AC. Perfect for city travel.",
+    "images": [
+      "car3.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "4003",
+    "agencyId": "1780950377675",
+    "brand": "Suzuki",
+    "model": "Swift",
+    "year": "2023",
+    "color": "Red",
+    "rentPerDay": "5000",
+    "rentWithDriver": "7500",
+    "rentWithPetrol": "6500",
+    "rentWithDriverAndPetrol": "9500",
+    "description": "Suzuki Swift 2023. Fuel efficient, easy to park. Great for city driving.",
+    "images": [
+      "car4.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "4004",
+    "agencyId": "1780950377675",
+    "brand": "Toyota",
+    "model": "Fortuner",
+    "year": "2021",
+    "color": "Black",
+    "rentPerDay": "20000",
+    "rentWithDriver": "25000",
+    "rentWithPetrol": "24000",
+    "rentWithDriverAndPetrol": "30000",
+    "description": "Toyota Fortuner 2021. 7 seater. Leather seats, sunroof, 4WD.",
+    "images": [
+      "car5.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "4005",
+    "agencyId": "1781300000001",
+    "brand": "Toyota",
+    "model": "Fortuner",
+    "year": "2022",
+    "color": "White",
+    "rentPerDay": "22000",
+    "rentWithDriver": "28000",
+    "rentWithPetrol": "26000",
+    "rentWithDriverAndPetrol": "33000",
+    "description": "Toyota Fortuner Sigma 4 2022. 4WD, leather seats, sunroof.",
+    "images": [
+      "car6.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "4006",
+    "agencyId": "1781300000001",
+    "brand": "Honda",
+    "model": "BRV",
+    "year": "2021",
+    "color": "White",
+    "rentPerDay": "10000",
+    "rentWithDriver": "13000",
+    "rentWithPetrol": "12500",
+    "rentWithDriverAndPetrol": "16500",
+    "description": "Honda BRV 2021. 7 seater family SUV. AC, USB charging, reverse camera.",
+    "images": [
+      "car7.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "4007",
+    "agencyId": "1781300000001",
+    "brand": "Toyota",
+    "model": "Corolla",
+    "year": "2023",
+    "color": "Gray",
+    "rentPerDay": "9000",
+    "rentWithDriver": "12000",
+    "rentWithPetrol": "11000",
+    "rentWithDriverAndPetrol": "15000",
+    "description": "Toyota Corolla 2023. Comfortable and reliable. AC, push start, GPS.",
+    "images": [
+      "car8.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "4008",
+    "agencyId": "1781300000001",
+    "brand": "Suzuki",
+    "model": "Jimny",
+    "year": "2023",
+    "color": "Green",
+    "rentPerDay": "15000",
+    "rentWithDriver": "20000",
+    "rentWithPetrol": "18000",
+    "rentWithDriverAndPetrol": "24000",
+    "description": "Suzuki Jimny 2023. 4WD off-road mini SUV. Perfect for adventure trips.",
+    "images": [
+      "car9.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "4009",
+    "agencyId": "1781300000001",
+    "brand": "Toyota",
+    "model": "Hilux",
+    "year": "2022",
+    "color": "Gray",
+    "rentPerDay": "25000",
+    "rentWithDriver": "30000",
+    "rentWithPetrol": "30000",
+    "rentWithDriverAndPetrol": "36000",
+    "description": "Toyota Hilux 2022. 4x4 pickup. For off-road and northern Pakistan trips.",
+    "images": [
+      "car10.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "4010",
+    "agencyId": "1781300000002",
+    "brand": "Toyota",
+    "model": "Prado",
+    "year": "2021",
+    "color": "White",
+    "rentPerDay": "35000",
+    "rentWithDriver": "42000",
+    "rentWithPetrol": "40000",
+    "rentWithDriverAndPetrol": "50000",
+    "description": "Toyota Prado TXL 2021. Panoramic sunroof, leather seats, 360 camera. VIP travel.",
+    "images": [
+      "car1.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "4011",
+    "agencyId": "1781300000002",
+    "brand": "Mercedes",
+    "model": "E-Class",
+    "year": "2022",
+    "color": "Black",
+    "rentPerDay": "50000",
+    "rentWithDriver": "60000",
+    "rentWithPetrol": "58000",
+    "rentWithDriverAndPetrol": "70000",
+    "description": "Mercedes E-Class 2022. Premium leather, ambient lighting. Perfect for VIP events.",
+    "images": [
+      "car2.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "4012",
+    "agencyId": "1781300000002",
+    "brand": "Toyota",
+    "model": "Land Cruiser",
+    "year": "2022",
+    "color": "Black",
+    "rentPerDay": "60000",
+    "rentWithDriver": "70000",
+    "rentWithPetrol": "68000",
+    "rentWithDriverAndPetrol": "80000",
+    "description": "Toyota Land Cruiser 2022. Ultimate luxury SUV. 8 seater, full option.",
+    "images": [
+      "car3.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "4013",
+    "agencyId": "1781300000002",
+    "brand": "BMW",
+    "model": "7 Series",
+    "year": "2022",
+    "color": "White",
+    "rentPerDay": "80000",
+    "rentWithDriver": "95000",
+    "rentWithPetrol": "90000",
+    "rentWithDriverAndPetrol": "110000",
+    "description": "BMW 7 Series 2022. Massage seats, theatre screen. For VIP corporate events.",
+    "images": [
+      "car4.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "4014",
+    "agencyId": "1781300000002",
+    "brand": "Honda",
+    "model": "Civic",
+    "year": "2023",
+    "color": "Silver",
+    "rentPerDay": "12000",
+    "rentWithDriver": "16000",
+    "rentWithPetrol": "15000",
+    "rentWithDriverAndPetrol": "20000",
+    "description": "Honda Civic 2023. Leather seats, sunroof. Perfect for executive travel.",
+    "images": [
+      "car5.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "4015",
+    "agencyId": "1781300000003",
+    "brand": "Suzuki",
+    "model": "Alto",
+    "year": "2023",
+    "color": "White",
+    "rentPerDay": "3500",
+    "rentWithDriver": "5500",
+    "rentWithPetrol": "5000",
+    "rentWithDriverAndPetrol": "7500",
+    "description": "Suzuki Alto 2023. Most fuel efficient. Budget city car. AC, music system.",
+    "images": [
+      "car6.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "4016",
+    "agencyId": "1781300000003",
+    "brand": "Suzuki",
+    "model": "Swift",
+    "year": "2022",
+    "color": "Blue",
+    "rentPerDay": "5000",
+    "rentWithDriver": "7500",
+    "rentWithPetrol": "6500",
+    "rentWithDriverAndPetrol": "9500",
+    "description": "Suzuki Swift 2022 automatic. Sporty hatchback. Great for city and short trips.",
+    "images": [
+      "car7.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "4017",
+    "agencyId": "1781300000003",
+    "brand": "Toyota",
+    "model": "Corolla",
+    "year": "2021",
+    "color": "White",
+    "rentPerDay": "8000",
+    "rentWithDriver": "11000",
+    "rentWithPetrol": "10000",
+    "rentWithDriverAndPetrol": "14000",
+    "description": "Toyota Corolla 2021. Reliable sedan. AC, GPS, push start.",
+    "images": [
+      "car8.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "4018",
+    "agencyId": "1781300000003",
+    "brand": "Toyota",
+    "model": "Hilux",
+    "year": "2021",
+    "color": "White",
+    "rentPerDay": "23000",
+    "rentWithDriver": "28000",
+    "rentWithPetrol": "27000",
+    "rentWithDriverAndPetrol": "34000",
+    "description": "Toyota Hilux 2021. 4x4 pickup. For off-road adventures.",
+    "images": [
+      "car9.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "4019",
+    "agencyId": "1781300000003",
+    "brand": "Honda",
+    "model": "BRV",
+    "year": "2022",
+    "color": "Gray",
+    "rentPerDay": "11000",
+    "rentWithDriver": "14500",
+    "rentWithPetrol": "13500",
+    "rentWithDriverAndPetrol": "18000",
+    "description": "Honda BRV 2022. 7 seater. Comfortable family SUV. AC, USB, reverse camera.",
+    "images": [
+      "car10.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "4020",
+    "agencyId": "1781300000004",
+    "brand": "BMW",
+    "model": "5 Series",
+    "year": "2023",
+    "color": "Alpine White",
+    "rentPerDay": "65000",
+    "rentWithDriver": "75000",
+    "rentWithPetrol": "72000",
+    "rentWithDriverAndPetrol": "85000",
+    "description": "BMW 5 Series 530i 2023. Massage seats, Harman Kardon. For weddings and corporate events.",
+    "images": [
+      "car1.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "4021",
+    "agencyId": "1781300000004",
+    "brand": "BMW",
+    "model": "X5",
+    "year": "2022",
+    "color": "Black",
+    "rentPerDay": "75000",
+    "rentWithDriver": "88000",
+    "rentWithPetrol": "85000",
+    "rentWithDriverAndPetrol": "100000",
+    "description": "BMW X5 2022. Panoramic sunroof, Bowers Wilkins. Ultimate luxury SUV for VIP events.",
+    "images": [
+      "car2.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "4022",
+    "agencyId": "1781300000004",
+    "brand": "Toyota",
+    "model": "Prado",
+    "year": "2022",
+    "color": "White",
+    "rentPerDay": "38000",
+    "rentWithDriver": "46000",
+    "rentWithPetrol": "44000",
+    "rentWithDriverAndPetrol": "54000",
+    "description": "Toyota Prado 2022 TXL. Full option. Sunroof, 360 camera, leather seats.",
+    "images": [
+      "car3.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "4023",
+    "agencyId": "1781300000004",
+    "brand": "Toyota",
+    "model": "Coaster",
+    "year": "2021",
+    "color": "White",
+    "rentPerDay": "30000",
+    "rentWithDriver": "36000",
+    "rentWithPetrol": "36000",
+    "rentWithDriverAndPetrol": "44000",
+    "description": "Toyota Coaster 2021. 30 seater AC bus. Perfect for group tours and weddings.",
+    "images": [
+      "car4.jpg"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "4024",
+    "agencyId": "1781300000004",
+    "brand": "MG",
+    "model": "HS",
+    "year": "2023",
+    "color": "Red",
+    "rentPerDay": "14000",
+    "rentWithDriver": "18000",
+    "rentWithPetrol": "17000",
+    "rentWithDriverAndPetrol": "22000",
+    "description": "MG HS 2023. Premium SUV. 360 camera, panoramic sunroof, ventilated seats.",
+    "images": [
+      "car5.jpg"
+    ],
+    "status": "available"
+  }
+]

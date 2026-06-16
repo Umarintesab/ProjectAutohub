@@ -1,0 +1,54 @@
+[
+  {
+    "id": "AH-1781383594882-3493",
+    "carId": "2020",
+    "brand": "Suzuki",
+    "model": "Cultus VXL",
+    "price": "3200000",
+    "sellerId": "1781206613860",
+    "buyerId": "1781206613860",
+    "buyerName": "Muhammad Jawad",
+    "buyerPhone": "03403258679",
+    "type": "sale",
+    "confirmedAt": "2026-06-13T20:46:34.883Z"
+  },
+  {
+    "id": "AH-1781383796179-3264",
+    "carId": "2008",
+    "brand": "Honda",
+    "model": "Civic RS Turbo",
+    "price": "7800000",
+    "sellerId": "1781205645322",
+    "buyerId": "1781209301001",
+    "buyerName": "Muhammad Jawad",
+    "buyerPhone": "03215485693",
+    "type": "sale",
+    "confirmedAt": "2026-06-13T20:49:56.179Z"
+  },
+  {
+    "id": "AH-1781384287350-6735",
+    "carId": "2001",
+    "brand": "Toyota",
+    "model": "Corolla Altis",
+    "price": "6200000",
+    "sellerId": "1780949959165",
+    "buyerId": "1780949864317",
+    "buyerName": "Muhammad Talha",
+    "buyerPhone": "03232517517",
+    "type": "sale",
+    "confirmedAt": "2026-06-13T20:58:07.350Z"
+  },
+  {
+    "id": "AH-1781429825752-2786",
+    "carId": "2002",
+    "brand": "Toyota",
+    "model": "Yaris ATIV",
+    "price": "4800000",
+    "sellerId": "1780949959165",
+    "buyerId": "1780949864317",
+    "buyerName": "Muhammad Talha",
+    "buyerPhone": "03232517517",
+    "type": "sale",
+    "confirmedAt": "2026-06-14T09:37:05.758Z"
+  }
+]

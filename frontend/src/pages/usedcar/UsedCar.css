@@ -1,0 +1,579 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Montserrat:wght@700;800;900&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+
+.usedcar-container {
+  min-height: 100vh;
+  background: #e8f5e9;
+}
+
+/* NAVBAR */
+.usedcar-nav {
+  background: linear-gradient(135deg, #1B5E20, #2E7D32);
+  padding: 0 40px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.usedcar-nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.usedcar-nav-icon {
+  width: 34px;
+  height: 34px;
+  background: rgba(255,255,255,0.15);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.usedcar-nav-brand h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.usedcar-nav-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.usedcar-nav-name {
+  color: rgba(255,255,255,0.85);
+  font-size: 14px;
+}
+
+.usedcar-nav-badge {
+  background: rgba(255,255,255,0.15);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.usedcar-logout-btn {
+  padding: 7px 18px;
+  background: rgba(255,255,255,0.15);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  font-family: 'Poppins', sans-serif;
+  transition: 0.3s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.usedcar-logout-btn:hover {
+  background: rgba(255,255,255,0.28);
+  transform: translateY(-1px);
+}
+
+/* NOTIFICATION */
+.usedcar-notification {
+  background: white;
+  border-left: 5px solid #e65100;
+  margin: 20px 40px;
+  border-radius: 12px;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 20px rgba(230,81,0,0.15);
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.usedcar-notif-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.notif-icon { font-size: 28px; }
+
+.usedcar-notif-left h4 {
+  font-size: 15px;
+  color: #121212;
+  margin-bottom: 4px;
+  font-weight: 700;
+}
+
+.usedcar-notif-left p {
+  font-size: 13px;
+  color: #555;
+}
+
+.usedcar-notif-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.usedcar-confirm-btn {
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #2E7D32, #43A047);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 4px 12px rgba(46,125,50,0.3);
+  transition: 0.3s;
+}
+
+.usedcar-confirm-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(46,125,50,0.4);
+}
+
+.usedcar-dismiss-btn {
+  padding: 10px 18px;
+  background: transparent;
+  color: #888;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  font-family: 'Poppins', sans-serif;
+  transition: 0.2s;
+}
+
+.usedcar-dismiss-btn:hover { color: #333; }
+
+/* HERO */
+.usedcar-hero {
+  background: linear-gradient(135deg, #121212 0%, #1a2e1a 100%);
+  padding: 36px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.usedcar-hero-left h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  color: white;
+  margin-bottom: 6px;
+}
+
+.usedcar-hero-left h1 span { color: #66BB6A; }
+
+.usedcar-hero-left p {
+  color: rgba(255,255,255,0.55);
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.usedcar-stats-row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.usedcar-stat-box {
+  background: rgba(255,255,255,0.06);
+  border-radius: 12px;
+  padding: 12px 18px;
+  text-align: center;
+  min-width: 75px;
+}
+
+.usedcar-stat-box.green {
+  background: rgba(46,125,50,0.2);
+  border: 1px solid rgba(102,187,106,0.3);
+}
+
+.usedcar-stat-box h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  color: #66BB6A;
+}
+
+.usedcar-stat-box p {
+  font-size: 11px;
+  color: rgba(255,255,255,0.5);
+  margin-top: 2px;
+}
+
+.usedcar-add-btn {
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #2E7D32, #43A047);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  transition: 0.3s;
+  box-shadow: 0 4px 16px rgba(46,125,50,0.35);
+  white-space: nowrap;
+}
+
+.usedcar-add-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(46,125,50,0.45);
+}
+
+/* CONTENT */
+.usedcar-content { padding: 28px 40px; }
+
+/* ADD FORM */
+.usedcar-add-form {
+  background: white;
+  border-radius: 16px;
+  padding: 28px;
+  margin-bottom: 28px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+  animation: slideIn 0.3s ease;
+}
+
+.usedcar-add-form h3 {
+  font-size: 17px;
+  font-weight: 700;
+  color: #121212;
+  margin-bottom: 6px;
+}
+
+.usedcar-form-note {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 20px;
+}
+
+.usedcar-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.usedcar-form-grid input,
+.usedcar-add-form textarea {
+  padding: 11px 14px;
+  border-radius: 8px;
+  border: 1.5px solid #e0e0e0;
+  background: #f9faf9;
+  color: #121212;
+  font-size: 13px;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+  transition: 0.2s;
+  width: 100%;
+}
+
+.usedcar-form-grid input:focus,
+.usedcar-add-form textarea:focus {
+  border-color: #2E7D32;
+  box-shadow: 0 0 0 3px rgba(46,125,50,0.08);
+}
+
+.usedcar-add-form textarea {
+  height: 90px;
+  resize: none;
+  margin-bottom: 12px;
+  width: 100%;
+}
+
+.usedcar-upload-area {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.usedcar-upload-area label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #444;
+}
+
+.upload-count {
+  font-size: 12px;
+  color: #2E7D32;
+  font-weight: 600;
+}
+
+.usedcar-submit-btn {
+  padding: 12px 32px;
+  background: linear-gradient(135deg, #2E7D32, #43A047);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  transition: 0.3s;
+  box-shadow: 0 4px 14px rgba(46,125,50,0.3);
+}
+
+.usedcar-submit-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(46,125,50,0.4);
+}
+
+/* TABS */
+.usedcar-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.usedcar-tab {
+  padding: 9px 20px;
+  background: white;
+  color: #555;
+  border: none;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  transition: 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.usedcar-tab:hover { color: #2E7D32; }
+
+.usedcar-tab.active {
+  background: linear-gradient(135deg, #2E7D32, #43A047);
+  color: white;
+  box-shadow: 0 4px 14px rgba(46,125,50,0.3);
+}
+
+/* CARS LIST — horizontal cards */
+.usedcar-cars-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.usedcar-car-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.usedcar-car-card:hover {
+  box-shadow: 0 8px 28px rgba(46,125,50,0.15);
+  transform: translateY(-2px);
+}
+
+/* 4 IMAGES ROW */
+.usedcar-car-images {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 180px;
+  gap: 2px;
+}
+
+.usedcar-car-img {
+  position: relative;
+  overflow: hidden;
+  background: #f5f5f5;
+}
+
+.usedcar-car-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: 0.3s;
+}
+
+.usedcar-car-card:hover .usedcar-car-img img {
+  transform: scale(1.05);
+}
+
+.usedcar-img-label {
+  position: absolute;
+  bottom: 6px;
+  left: 6px;
+  background: rgba(0,0,0,0.55);
+  color: white;
+  font-size: 10px;
+  padding: 2px 7px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.usedcar-no-img {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #bbb;
+  font-size: 14px;
+  background: #f9f9f9;
+}
+
+/* DETAILS */
+.usedcar-car-details {
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.usedcar-car-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.usedcar-car-top h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #121212;
+  margin-bottom: 4px;
+}
+
+.usedcar-car-meta {
+  font-size: 13px;
+  color: #888;
+}
+
+.usedcar-car-price {
+  font-size: 18px;
+  font-weight: 800;
+  color: #2E7D32;
+  margin-bottom: 4px;
+}
+
+.usedcar-status {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.usedcar-status.available { background: rgba(46,125,50,0.1); color: #2E7D32; }
+.usedcar-status.pending { background: rgba(230,81,0,0.1); color: #e65100; }
+.usedcar-status.sold { background: rgba(198,40,40,0.1); color: #c62828; }
+
+.usedcar-car-desc {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.6;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+/* BUYER BOX */
+.usedcar-buyer-box {
+  background: #fff8f0;
+  border-radius: 10px;
+  padding: 14px 16px;
+  border-left: 4px solid #e65100;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.usedcar-buyer-box h4 {
+  font-size: 14px;
+  color: #e65100;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.usedcar-buyer-box p {
+  font-size: 13px;
+  color: #555;
+}
+
+/* SOLD BOX */
+.usedcar-sold-box {
+  background: #f0f9f0;
+  border-radius: 10px;
+  padding: 14px 16px;
+  border-left: 4px solid #2E7D32;
+}
+
+.usedcar-sold-box h4 {
+  font-size: 14px;
+  color: #2E7D32;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.usedcar-sold-box p {
+  font-size: 12px;
+  color: #555;
+  margin-bottom: 3px;
+}
+
+.usedcar-sold-box strong {
+  font-family: monospace;
+  color: #2E7D32;
+  font-weight: 700;
+}
+
+/* ACTIONS */
+.usedcar-card-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.usedcar-delete-btn {
+  padding: 8px 16px;
+  background: rgba(198,40,40,0.06);
+  color: #c62828;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 12px;
+  font-family: 'Poppins', sans-serif;
+  transition: 0.2s;
+}
+
+.usedcar-delete-btn:hover { background: rgba(198,40,40,0.12); }
+
+/* EMPTY */
+.usedcar-empty {
+  text-align: center;
+  padding: 60px 20px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+}
+
+.usedcar-empty-icon { font-size: 48px; margin-bottom: 16px; }
+.usedcar-empty h3 { font-size: 18px; color: #444; margin-bottom: 8px; }
+.usedcar-empty p { font-size: 14px; color: #999; margin-bottom: 20px; }

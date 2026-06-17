@@ -38,7 +38,7 @@ function Signup() {
     }
     const address = `House ${formData.houseNo}, Street ${formData.street}, ${formData.area}, ${formData.city}, ${formData.country}`;
     try {
-      await axios.post('http://localhost:5000/api/auth/signup', { ...formData, role, address });
+      await axios.post(`${process.env.REACT_APP_API_URL}/api/auth/signup`, { ...formData, role, address });
       navigate('/login');
     } catch (err) {
       setError(err.response?.data?.message || 'Signup failed');

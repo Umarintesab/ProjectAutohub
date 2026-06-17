@@ -9,7 +9,7 @@ function AuthorizedDealers() {
   const [search, setSearch] = useState('');
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/auth/dealers').then(res => setDealers(res.data));
+    axios.get('projectautohub-production-2c65.up.railway.app/api/auth/dealers').then(res => setDealers(res.data));
   }, []);
 
   const filtered = dealers.filter(d =>

@@ -13,7 +13,7 @@ function Login() {
   const handleLogin = async () => {
     if (!email || !password) { setError('Please fill all fields'); return; }
     try {
-      const res = await axios.post('projectautohub-production-2c65.up.railway.app/api/auth/login', { email, password });
+      const res = await axios.post('$env:REACT_APP_API_URL/api/auth/login', { email, password });
       const user = res.data.user;
       localStorage.setItem('user', JSON.stringify(user));
       if (user.role === 'customer') navigate('/customer/dashboard');

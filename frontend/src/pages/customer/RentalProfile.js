@@ -5,7 +5,7 @@ import './Customer.css';
 
 const getImageSrc = (img) => {
   if (!img) return null;
-  return `projectautohub-production-2c65.up.railway.app/uploads/${img}`;
+  return `$env:REACT_APP_API_URL/uploads/${img}`;
 };
 
 function RentalProfile() {
@@ -16,11 +16,11 @@ function RentalProfile() {
   const [search, setSearch] = useState('');
 
   useEffect(() => {
-    axios.get('projectautohub-production-2c65.up.railway.app/api/auth/agencies').then(res => {
+    axios.get('$env:REACT_APP_API_URL/api/auth/agencies').then(res => {
       const found = res.data.find(a => a.id === agencyId);
       setAgency(found);
     });
-    axios.get('projectautohub-production-2c65.up.railway.app/api/rentals').then(res => {
+    axios.get('$env:REACT_APP_API_URL/api/rentals').then(res => {
       setCars(res.data.filter(r => r.agencyId === agencyId));
     });
   }, [agencyId]);

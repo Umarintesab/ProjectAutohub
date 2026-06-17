@@ -5,7 +5,7 @@ import './Rental.css';
 
 const getImageSrc = (img) => {
   if (!img) return null;
-  return `$env:REACT_APP_API_URL/uploads/${img}`;
+  return `https://projectautohub-production-2c65.up.railway.app/uploads/${img}`;
 };
 
 function RentalDashboard() {
@@ -34,7 +34,7 @@ function RentalDashboard() {
   }, [navigate]);
 
   const loadCars = (agencyId) => {
-    axios.get(`$env:REACT_APP_API_URL/api/rentals/agency/${agencyId}`).then(res => {
+    axios.get(`https://projectautohub-production-2c65.up.railway.app/api/rentals/agency/${agencyId}`).then(res => {
       setCars(res.data);
       const pending = res.data.find(c => c.status === 'pending');
       if (pending) setNotification(pending);
@@ -42,7 +42,7 @@ function RentalDashboard() {
   };
 
   const loadTransactions = (agencyId) => {
-    axios.get(`$env:REACT_APP_API_URL/api/rentals/transactions/${agencyId}`).then(res => {
+    axios.get(`https://projectautohub-production-2c65.up.railway.app/api/rentals/transactions/${agencyId}`).then(res => {
       setTransactions(res.data);
     });
   };
@@ -52,7 +52,7 @@ function RentalDashboard() {
     data.append('agencyId', user.id);
     Object.keys(formData).forEach(k => data.append(k, formData[k]));
     images.forEach(img => data.append('images', img));
-    await axios.post('$env:REACT_APP_API_URL/api/rentals/add', data);
+    await axios.post('https://projectautohub-production-2c65.up.railway.app/api/rentals/add', data);
     setShowAddForm(false);
     setFormData({
       brand: '', model: '', year: '', color: '',
@@ -64,19 +64,19 @@ function RentalDashboard() {
   };
 
   const handleDelete = async (id) => {
-    await axios.delete(`$env:REACT_APP_API_URL/api/rentals/${id}`);
+    await axios.delete(`https://projectautohub-production-2c65.up.railway.app/api/rentals/${id}`);
     loadCars(user.id);
   };
 
   const handleConfirmRental = async (id) => {
-    await axios.post(`$env:REACT_APP_API_URL/api/rentals/confirm/${id}`);
+    await axios.post(`https://projectautohub-production-2c65.up.railway.app/api/rentals/confirm/${id}`);
     setNotification(null);
     loadCars(user.id);
     loadTransactions(user.id);
   };
 
   const handleMarkAvailable = async (id) => {
-    await axios.post(`$env:REACT_APP_API_URL/api/rentals/return/${id}`);
+    await axios.post(`https://projectautohub-production-2c65.up.railway.app/api/rentals/return/${id}`);
     loadCars(user.id);
   };
 

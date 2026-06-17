@@ -5,7 +5,7 @@ import './Customer.css';
 
 const getImageSrc = (img) => {
   if (!img) return null;
-  return `$env:REACT_APP_API_URL/uploads/${img}`;
+  return `https://projectautohub-production-2c65.up.railway.app/uploads/${img}`;
 };
 
 function UsedCars() {
@@ -14,7 +14,7 @@ function UsedCars() {
   const [search, setSearch] = useState('');
 
   useEffect(() => {
-    axios.get('$env:REACT_APP_API_URL/api/cars').then(res => {
+    axios.get('https://projectautohub-production-2c65.up.railway.app/api/cars').then(res => {
       setCars(res.data.filter(c => c.type === 'used'));
     });
   }, []);

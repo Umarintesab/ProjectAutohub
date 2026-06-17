@@ -5,7 +5,7 @@ import './Customer.css';
 
 const getImageSrc = (img) => {
   if (!img) return null;
-  return `$env:REACT_APP_API_URL/uploads/${img}`;
+  return `https://projectautohub-production-2c65.up.railway.app/uploads/${img}`;
 };
 
 function DealerProfile() {
@@ -16,11 +16,11 @@ function DealerProfile() {
   const [search, setSearch] = useState('');
 
   useEffect(() => {
-    axios.get('$env:REACT_APP_API_URL/api/auth/dealers').then(res => {
+    axios.get('https://projectautohub-production-2c65.up.railway.app/api/auth/dealers').then(res => {
       const found = res.data.find(d => d.id === dealerId);
       setDealer(found);
     });
-    axios.get('$env:REACT_APP_API_URL/api/cars').then(res => {
+    axios.get('https://projectautohub-production-2c65.up.railway.app/api/cars').then(res => {
       const dealerCars = res.data.filter(c => c.sellerId === dealerId && c.status === 'available');
       setCars(dealerCars);
     });

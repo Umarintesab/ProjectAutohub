@@ -4,24 +4,43 @@ import axios from 'axios';
 import carImage from '../assets/car.jpg';
 import './Auth.css';
 
+// ✅ ADD THIS - Use Railway backend URL
+const API_URL = process.env.REACT_APP_API_URL || 'https://projectautohub-production-2c65.up.railway.app';
+
 function Login() {
   const navigate = useNavigate();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const [loading, setLoading] = useState(false);
 
   const handleLogin = async () => {
-    if (!email || !password) { setError('Please fill all fields'); return; }
+    if (!email || !password) { 
+      setError('Please fill all fields'); 
+      return; 
+    }
+    
+    setError('');
+    setLoading(true);
+
     try {
-      const res = await axios.post('http://localhost:5000/api/auth/login', { email, password });
+      // ✅ CHANGED: Use Railway URL instead of localhost
+      const res = await axios.post(`${API_URL}/api/auth/login`, { email, password });
       const user = res.data.user;
       localStorage.setItem('user', JSON.stringify(user));
+      
+      // Redirect based on role
       if (user.role === 'customer') navigate('/customer/dashboard');
       else if (user.role === 'dealer') navigate('/dealer/dashboard');
       else if (user.role === 'usedcar') navigate('/usedcar/dashboard');
       else if (user.role === 'rental') navigate('/rental/dashboard');
+      else navigate('/');
+      
     } catch (err) {
-      setError(err.response?.data?.message || 'Login failed');
+      console.error('Login error:', err);
+      setError(err.response?.data?.message || 'Login failed. Please try again.');
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -38,16 +57,31 @@ function Login() {
           <div className="form-fields">
             <div className="form-group">
               <label>Email Address</label>
-              <input placeholder="example@gmail.com" type="email"
-                value={email} onChange={e => setEmail(e.target.value)} />
+              <input 
+                placeholder="example@gmail.com" 
+                type="email"
+                value={email} 
+                onChange={e => setEmail(e.target.value)} 
+              />
             </div>
             <div className="form-group">
               <label>Password</label>
-              <input placeholder="••••••••••••" type="password"
-                value={password} onChange={e => setPassword(e.target.value)} />
+              <input 
+                placeholder="••••••••••••" 
+                type="password"
+                value={password} 
+                onChange={e => setPassword(e.target.value)}
+                onKeyPress={(e) => e.key === 'Enter' && handleLogin()}
+              />
             </div>
             {error && <p className="error-msg">{error}</p>}
-            <button className="btn-submit" onClick={handleLogin}>Login</button>
+            <button 
+              className="btn-submit" 
+              onClick={handleLogin}
+              disabled={loading}
+            >
+              {loading ? 'Logging in...' : 'Login'}
+            </button>
             <p className="auth-switch">
               Don't have an account? <span onClick={() => navigate('/signup')}>Sign Up</span>
             </p>

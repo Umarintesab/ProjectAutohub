@@ -5,7 +5,7 @@ import './Customer.css';
 
 const getImageSrc = (img) => {
   if (!img) return null;
-  return `http://localhost:5000/uploads/${img}`;
+  return `${API_URL}/uploads/${img}`;
 };
 
 function DealerProfile() {
@@ -16,11 +16,11 @@ function DealerProfile() {
   const [search, setSearch] = useState('');
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/auth/dealers').then(res => {
+    axios.get('${API_URL}/api/auth/dealers').then(res => {
       const found = res.data.find(d => d.id === dealerId);
       setDealer(found);
     });
-    axios.get('http://localhost:5000/api/cars').then(res => {
+    axios.get('${API_URL}/api/cars').then(res => {
       const dealerCars = res.data.filter(c => c.sellerId === dealerId && c.status === 'available');
       setCars(dealerCars);
     });

@@ -9,7 +9,7 @@ function RentalAgencies() {
   const [search, setSearch] = useState('');
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/auth/agencies').then(res => setAgencies(res.data));
+    axios.get('${API_URL}/api/auth/agencies').then(res => setAgencies(res.data));
   }, []);
 
   const filtered = agencies.filter(a =>

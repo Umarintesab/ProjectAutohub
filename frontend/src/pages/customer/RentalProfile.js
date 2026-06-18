@@ -5,7 +5,7 @@ import './Customer.css';
 
 const getImageSrc = (img) => {
   if (!img) return null;
-  return `http://localhost:5000/uploads/${img}`;
+  return `${API_URL}/uploads/${img}`;
 };
 
 function RentalProfile() {
@@ -16,11 +16,11 @@ function RentalProfile() {
   const [search, setSearch] = useState('');
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/auth/agencies').then(res => {
+    axios.get('${API_URL}/api/auth/agencies').then(res => {
       const found = res.data.find(a => a.id === agencyId);
       setAgency(found);
     });
-    axios.get('http://localhost:5000/api/rentals').then(res => {
+    axios.get('${API_URL}/api/rentals').then(res => {
       setCars(res.data.filter(r => r.agencyId === agencyId));
     });
   }, [agencyId]);

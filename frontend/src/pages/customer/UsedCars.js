@@ -5,7 +5,7 @@ import './Customer.css';
 
 const getImageSrc = (img) => {
   if (!img) return null;
-  return `http://localhost:5000/uploads/${img}`;
+  return `${API_URL}/uploads/${img}`;
 };
 
 function UsedCars() {
@@ -14,7 +14,7 @@ function UsedCars() {
   const [search, setSearch] = useState('');
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/cars').then(res => {
+    axios.get('${API_URL}/api/cars').then(res => {
       setCars(res.data.filter(c => c.type === 'used'));
     });
   }, []);

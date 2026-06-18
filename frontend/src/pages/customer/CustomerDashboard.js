@@ -5,7 +5,7 @@ import './Customer.css';
 
 const getImageSrc = (img) => {
   if (!img) return null;
-  return `http://localhost:5000/uploads/${img}`;
+  return `${API_URL}/uploads/${img}`;
 };
 
 function CustomerDashboard() {
@@ -25,8 +25,8 @@ function CustomerDashboard() {
   }, [navigate]);
 
   const loadData = async (userId) => {
-    const carsRes = await axios.get('http://localhost:5000/api/cars');
-    const rentalsRes = await axios.get('http://localhost:5000/api/rentals');
+    const carsRes = await axios.get('${API_URL}/api/cars');
+    const rentalsRes = await axios.get('${API_URL}/api/rentals');
 
     const allCars = carsRes.data;
     const allRentals = rentalsRes.data;

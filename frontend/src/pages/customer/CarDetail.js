@@ -5,7 +5,7 @@ import './CarDetail.css';
 
 const getImageSrc = (img) => {
   if (!img) return null;
-  return `${API_URL}/uploads/${img}`;
+  return `https://projectautohub-production-2c65.up.railway.app/uploads/${img}`;
 };
 
 function CarDetail() {
@@ -29,12 +29,12 @@ function CarDetail() {
 
   const fetchCar = async () => {
     if (type === 'rental') {
-      const res = await axios.get('${API_URL}/api/rentals');
+      const res = await axios.get('https://projectautohub-production-2c65.up.railway.app/api/rentals');
       const found = res.data.find(c => c.id === carId);
       setCar(found);
       if (found?.transactionId) setTransactionId(found.transactionId);
     } else {
-      const res = await axios.get('${API_URL}/api/cars');
+      const res = await axios.get('https://projectautohub-production-2c65.up.railway.app/api/cars');
       const found = res.data.find(c => c.id === carId);
       setCar(found);
       if (found?.transactionId) setTransactionId(found.transactionId);
@@ -43,7 +43,7 @@ function CarDetail() {
 
   const handleBuy = async () => {
     const user = JSON.parse(localStorage.getItem('user'));
-    await axios.post(`${API_URL}/api/cars/buy/${car.id}`, {
+    await axios.post(`https://projectautohub-production-2c65.up.railway.app/api/cars/buy/${car.id}`, {
       buyerId: user.id,
       buyerName: buyForm.buyerName,
       buyerPhone: buyForm.buyerPhone
@@ -55,7 +55,7 @@ function CarDetail() {
 
   const handleRent = async () => {
     const user = JSON.parse(localStorage.getItem('user'));
-    await axios.post(`${API_URL}/api/rentals/rent/${car.id}`, {
+    await axios.post(`https://projectautohub-production-2c65.up.railway.app/api/rentals/rent/${car.id}`, {
       renterId: user.id,
       renterName: rentForm.renterName,
       renterPhone: rentForm.renterPhone,
@@ -70,10 +70,10 @@ function CarDetail() {
     setChecking(true);
     try {
       if (type === 'rental') {
-        const res = await axios.get(`${API_URL}/api/rentals/check-transaction/${carId}`);
+        const res = await axios.get(`https://projectautohub-production-2c65.up.railway.app/api/rentals/check-transaction/${carId}`);
         if (res.data.transactionId) setTransactionId(res.data.transactionId);
       } else {
-        const res = await axios.get(`${API_URL}/api/cars/check-transaction/${carId}`);
+        const res = await axios.get(`https://projectautohub-production-2c65.up.railway.app/api/cars/check-transaction/${carId}`);
         if (res.data.transactionId) setTransactionId(res.data.transactionId);
       }
     } catch (e) {}

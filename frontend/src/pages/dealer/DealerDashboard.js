@@ -5,7 +5,7 @@ import './Dealer.css';
 
 const getImageSrc = (img) => {
   if (!img) return null;
-  return `${API_URL}/uploads/${img}`;
+  return `https://projectautohub-production-2c65.up.railway.app/uploads/${img}`;
 };
 
 function DealerDashboard() {
@@ -32,7 +32,7 @@ function DealerDashboard() {
   }, [navigate]);
 
   const loadCars = (sellerId) => {
-    axios.get(`${API_URL}/api/cars/seller/${sellerId}`).then(res => {
+    axios.get(`https://projectautohub-production-2c65.up.railway.app/api/cars/seller/${sellerId}`).then(res => {
       setCars(res.data);
       const pending = res.data.find(c => c.status === 'pending');
       if (pending) setNotification(pending);
@@ -40,7 +40,7 @@ function DealerDashboard() {
   };
 
   const loadTransactions = (sellerId) => {
-    axios.get(`${API_URL}/api/cars/transactions/${sellerId}`).then(res => {
+    axios.get(`https://projectautohub-production-2c65.up.railway.app/api/cars/transactions/${sellerId}`).then(res => {
       setTransactions(res.data);
     });
   };
@@ -52,7 +52,7 @@ function DealerDashboard() {
     data.append('type', 'new');
     Object.keys(formData).forEach(k => data.append(k, formData[k]));
     images.forEach(img => data.append('images', img));
-    await axios.post('${API_URL}/api/cars/add', data);
+    await axios.post('https://projectautohub-production-2c65.up.railway.app/api/cars/add', data);
     setShowAddForm(false);
     setFormData({ model: '', year: '', color: '', price: '', description: '' });
     setImages([]);
@@ -60,12 +60,12 @@ function DealerDashboard() {
   };
 
   const handleDelete = async (id) => {
-    await axios.delete(`${API_URL}/api/cars/${id}`);
+    await axios.delete(`https://projectautohub-production-2c65.up.railway.app/api/cars/${id}`);
     loadCars(user.id);
   };
 
   const handleConfirmSale = async (id) => {
-    await axios.post(`${API_URL}/api/cars/confirm/${id}`);
+    await axios.post(`https://projectautohub-production-2c65.up.railway.app/api/cars/confirm/${id}`);
     setNotification(null);
     loadCars(user.id);
     loadTransactions(user.id);

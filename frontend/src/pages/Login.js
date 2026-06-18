@@ -25,7 +25,7 @@ function Login() {
 
     try {
       // ✅ CHANGED: Use Railway URL instead of localhost
-      const res = await axios.post(`${API_URL}/api/auth/login`, { email, password });
+      const res = await axios.post(`https://projectautohub-production-2c65.up.railway.app/api/auth/login`, { email, password });
       const user = res.data.user;
       localStorage.setItem('user', JSON.stringify(user));
       

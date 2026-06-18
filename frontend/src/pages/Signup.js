@@ -62,7 +62,7 @@ function Signup() {
     
     try {
       // ✅ UPDATED: Using Railway URL
-      const response = await axios.post(`${API_URL}/api/auth/signup`, { 
+      const response = await axios.post(`https://projectautohub-production-2c65.up.railway.app/api/auth/signup`, { 
         ...formData, 
         role, 
         address 

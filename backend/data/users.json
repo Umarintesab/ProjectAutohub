@@ -382,5 +382,65 @@
     "brandName": "",
     "agencyName": "",
     "address": "House 1, Street 1, Area, City, Pakistan"
+  },
+  {
+    "id": "1781617846701",
+    "name": "Moosa",
+    "email": "moosa@gmail.com",
+    "password": "123",
+    "role": "customer",
+    "phone": "03153654987",
+    "cnic": "",
+    "brandName": "",
+    "agencyName": "",
+    "address": "House 23, Street 7, North Nazimabad, Karachi, Pakistan"
+  },
+  {
+    "id": "1781617919603",
+    "name": "Muhammad Talha",
+    "email": "talha@gmail.com",
+    "password": "111",
+    "role": "dealer",
+    "phone": "03007057169",
+    "cnic": "",
+    "brandName": "BMW",
+    "agencyName": "",
+    "address": "House 172/B, Street 11, Mehmoodabad # 01, Karachi, Pakistan"
+  },
+  {
+    "id": "1781618004202",
+    "name": "Taimoor",
+    "email": "taimoor@gmail.com",
+    "password": "123",
+    "role": "usedcar",
+    "phone": "03412954687",
+    "cnic": "42201-2449906-3",
+    "brandName": "",
+    "agencyName": "",
+    "address": "House 268, Street 4, Manzoor colony, Karachi, Pakistan"
+  },
+  {
+    "id": "1781618129507",
+    "name": "Sheraz Khan",
+    "email": "sheraz@gmail.com",
+    "password": "111",
+    "role": "rental",
+    "phone": "03005286948",
+    "cnic": "42201-6384622-3",
+    "brandName": "",
+    "agencyName": "Car Zone",
+    "address": "House 27, Street Block FN, wahdat colony , Lahore, Pakistan"
+  },
+  {
+    "id": "1781728318686",
+    "name": "Wahab",
+    "email": "wahab@gmail.com",
+    "password": "111",
+    "role": "customer",
+    "phone": "03125698741",
+    "cnic": "",
+    "brandName": "",
+    "agencyName": "",
+    "address": "House 31, Street block 1 , North Nazimabad, Karachi, Pakistan"
   }
 ]

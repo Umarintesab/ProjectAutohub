@@ -5,7 +5,7 @@ import './Customer.css';
 
 const getImageSrc = (img) => {
   if (!img) return null;
-  return `https://projectautohub-production-2c65.up.railway.app/uploads/${img}`;
+  return `http://localhost:5000/uploads/${img}`;
 };
 
 function CustomerDashboard() {
@@ -25,8 +25,8 @@ function CustomerDashboard() {
   }, [navigate]);
 
   const loadData = async (userId) => {
-    const carsRes = await axios.get('https://projectautohub-production-2c65.up.railway.app/api/cars');
-    const rentalsRes = await axios.get('https://projectautohub-production-2c65.up.railway.app/api/rentals');
+    const carsRes = await axios.get('http://localhost:5000/api/cars');
+    const rentalsRes = await axios.get('http://localhost:5000/api/rentals');
 
     const allCars = carsRes.data;
     const allRentals = rentalsRes.data;

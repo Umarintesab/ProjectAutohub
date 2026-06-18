@@ -9,7 +9,7 @@ function RentalAgencies() {
   const [search, setSearch] = useState('');
 
   useEffect(() => {
-    axios.get('https://projectautohub-production-2c65.up.railway.app/api/auth/agencies').then(res => setAgencies(res.data));
+    axios.get('http://localhost:5000/api/auth/agencies').then(res => setAgencies(res.data));
   }, []);
 
   const filtered = agencies.filter(a =>

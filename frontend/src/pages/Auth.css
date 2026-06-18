@@ -293,3 +293,78 @@
 }
 
 .auth-panel-badge span { color: #66BB6A; }
+
+/* ===== RESPONSIVE — TABLET ===== */
+@media (max-width: 1024px) {
+  .auth-card {
+    max-width: 380px;
+    padding: 32px 28px;
+  }
+}
+
+/* ===== RESPONSIVE — MOBILE ===== */
+@media (max-width: 768px) {
+  .auth-container {
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+    overflow-y: auto;
+  }
+
+  .auth-container.signup-layout {
+    flex-direction: column;
+  }
+
+  .auth-left {
+    width: 100%;
+    padding: 24px 16px;
+  }
+
+  .auth-container.signup-layout .auth-left {
+    width: 100%;
+  }
+
+  .auth-right-panel {
+    width: 100%;
+    height: 220px;
+  }
+
+  .auth-container.signup-layout .auth-right-panel {
+    width: 100%;
+  }
+
+  .auth-card {
+    max-width: 100%;
+    padding: 28px 20px;
+    max-height: none;
+  }
+
+  .auth-card h3 {
+    font-size: 22px;
+  }
+
+  .role-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .address-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .auth-panel-badge {
+    bottom: 16px;
+    right: 16px;
+    padding: 10px 16px;
+  }
+}
+
+/* ===== RESPONSIVE — SMALL MOBILE ===== */
+@media (max-width: 400px) {
+  .auth-card h3 {
+    font-size: 20px;
+  }
+
+  .auth-logo h2 {
+    font-size: 16px;
+  }
+}

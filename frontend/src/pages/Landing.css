@@ -202,3 +202,80 @@
 }
 
 .landing-badge span { color: #66BB6A; }
+
+/* ===== RESPONSIVE — TABLET ===== */
+@media (max-width: 1024px) {
+  .landing-card {
+    max-width: 380px;
+    padding: 32px 28px;
+  }
+
+  .landing-hero-text h1 {
+    font-size: 28px;
+  }
+}
+
+/* ===== RESPONSIVE — MOBILE ===== */
+@media (max-width: 768px) {
+  .landing-container {
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+    overflow-y: auto;
+  }
+
+  .landing-left {
+    width: 100%;
+    order: 2;
+    padding: 24px 16px;
+  }
+
+  .landing-right {
+    width: 100%;
+    height: 280px;
+    order: 1;
+  }
+
+  .landing-card {
+    max-width: 100%;
+    padding: 28px 20px;
+  }
+
+  .landing-hero-text h1 {
+    font-size: 26px;
+  }
+
+  .landing-hero-text p {
+    font-size: 13px;
+  }
+
+  .landing-action-buttons {
+    flex-direction: column;
+  }
+
+  .landing-stats {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .landing-badge {
+    bottom: 16px;
+    right: 16px;
+    padding: 10px 16px;
+  }
+}
+
+/* ===== RESPONSIVE — SMALL MOBILE ===== */
+@media (max-width: 400px) {
+  .landing-hero-text h1 {
+    font-size: 22px;
+  }
+
+  .landing-logo h2 {
+    font-size: 16px;
+  }
+
+  .landing-stat h3 {
+    font-size: 18px;
+  }
+}

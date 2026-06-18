@@ -26,3 +26,17 @@ html, body, #root {
   background: #2E7D32;
   border-radius: 10px;
 }
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+img {
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+}

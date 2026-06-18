@@ -5,7 +5,7 @@ import './UsedCar.css';
 
 const getImageSrc = (img) => {
   if (!img) return null;
-  return `https://projectautohub-production-2c65.up.railway.app/uploads/${img}`;
+  return `http://localhost:5000/uploads/${img}`;
 };
 
 function UsedCarDashboard() {
@@ -29,7 +29,7 @@ function UsedCarDashboard() {
   }, [navigate]);
 
   const loadCars = (sellerId) => {
-    axios.get(`https://projectautohub-production-2c65.up.railway.app/api/cars/seller/${sellerId}`).then(res => {
+    axios.get(`http://localhost:5000/api/cars/seller/${sellerId}`).then(res => {
       setCars(res.data);
       const pending = res.data.find(c => c.status === 'pending');
       if (pending) setNotification(pending);
@@ -46,7 +46,7 @@ function UsedCarDashboard() {
     data.append('type', 'used');
     Object.keys(formData).forEach(k => data.append(k, formData[k]));
     images.forEach(img => data.append('images', img));
-    await axios.post('https://projectautohub-production-2c65.up.railway.app/api/cars/add', data);
+    await axios.post('http://localhost:5000/api/cars/add', data);
     setShowAddForm(false);
     setFormData({ brand: '', model: '', year: '', color: '', price: '', description: '' });
     setImages([]);
@@ -54,12 +54,12 @@ function UsedCarDashboard() {
   };
 
   const handleDelete = async (id) => {
-    await axios.delete(`https://projectautohub-production-2c65.up.railway.app/api/cars/${id}`);
+    await axios.delete(`http://localhost:5000/api/cars/${id}`);
     loadCars(user.id);
   };
 
   const handleConfirmSale = async (id) => {
-    await axios.post(`https://projectautohub-production-2c65.up.railway.app/api/cars/confirm/${id}`);
+    await axios.post(`http://localhost:5000/api/cars/confirm/${id}`);
     setNotification(null);
     loadCars(user.id);
   };

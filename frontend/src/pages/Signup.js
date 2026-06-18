@@ -38,7 +38,7 @@ function Signup() {
     }
     const address = `House ${formData.houseNo}, Street ${formData.street}, ${formData.area}, ${formData.city}, ${formData.country}`;
     try {
-      await axios.post(`https://projectautohub-production-2c65.up.railway.app/api/auth/signup`, { ...formData, role, address });
+      await axios.post('http://localhost:5000/api/auth/signup', { ...formData, role, address });
       navigate('/login');
     } catch (err) {
       setError(err.response?.data?.message || 'Signup failed');

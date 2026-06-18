@@ -641,3 +641,139 @@
 
 .dealer-empty h3 { font-size: 18px; color: #444; margin-bottom: 8px; }
 .dealer-empty p { font-size: 14px; color: #999; }
+
+
+/* ===== RESPONSIVE — TABLET ===== */
+@media (max-width: 1024px) {
+  .dealer-cars-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .dealer-stats-row {
+    flex-wrap: wrap;
+  }
+
+  .inventory-summary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ===== RESPONSIVE — MOBILE ===== */
+@media (max-width: 768px) {
+  .dealer-nav {
+    padding: 0 16px;
+    flex-wrap: wrap;
+    height: auto;
+    min-height: 64px;
+    gap: 8px;
+  }
+
+  .dealer-nav-right {
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 8px 0;
+  }
+
+  .dealer-nav-name {
+    font-size: 12px;
+  }
+
+  .dealer-notification {
+    margin: 16px;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  .dealer-notification-actions {
+    width: 100%;
+  }
+
+  .dealer-notification-actions button {
+    flex: 1;
+  }
+
+  .dealer-hero {
+    flex-direction: column;
+    padding: 24px 16px;
+    align-items: flex-start;
+  }
+
+  .dealer-hero-left h1 {
+    font-size: 24px;
+  }
+
+  .dealer-stats-row {
+    width: 100%;
+  }
+
+  .dealer-stat-box {
+    flex: 1;
+    min-width: 60px;
+  }
+
+  .dealer-hero > div:last-child {
+    width: 100%;
+    flex-direction: row !important;
+    align-items: stretch !important;
+  }
+
+  .dealer-add-btn, .dealer-inventory-btn {
+    flex: 1;
+  }
+
+  .dealer-content {
+    padding: 20px 16px;
+  }
+
+  .dealer-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .inventory-summary {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .inventory-table-wrap {
+    overflow-x: scroll;
+  }
+
+  .inventory-table {
+    min-width: 700px;
+  }
+
+  .dealer-tabs {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 4px;
+  }
+
+  .dealer-tab {
+    white-space: nowrap;
+  }
+
+  .dealer-cars-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 12px;
+  }
+}
+
+/* ===== RESPONSIVE — SMALL MOBILE ===== */
+@media (max-width: 400px) {
+  .dealer-hero-left h1 {
+    font-size: 20px;
+  }
+
+  .dealer-cars-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .inventory-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .dealer-stat-box h3 {
+    font-size: 16px;
+  }
+}

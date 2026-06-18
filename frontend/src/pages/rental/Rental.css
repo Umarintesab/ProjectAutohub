@@ -689,3 +689,139 @@
 
 .rental-dash-empty h3 { font-size: 18px; color: #444; margin-bottom: 8px; }
 .rental-dash-empty p { font-size: 14px; color: #999; }
+
+/* ===== RESPONSIVE — TABLET ===== */
+@media (max-width: 1024px) {
+  .rental-dash-cars-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .rental-dash-stats-row {
+    flex-wrap: wrap;
+  }
+
+  .rental-inventory-summary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ===== RESPONSIVE — MOBILE ===== */
+@media (max-width: 768px) {
+  .rental-dash-nav {
+    padding: 0 16px;
+    flex-wrap: wrap;
+    height: auto;
+    min-height: 64px;
+    gap: 8px;
+  }
+
+  .rental-dash-nav-right {
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 8px 0;
+  }
+
+  .rental-dash-nav-name {
+    font-size: 12px;
+  }
+
+  .rental-dash-notification {
+    margin: 16px;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  .rental-dash-notif-actions {
+    width: 100%;
+  }
+
+  .rental-dash-notif-actions button {
+    flex: 1;
+  }
+
+  .rental-dash-hero {
+    flex-direction: column;
+    padding: 24px 16px;
+    align-items: flex-start;
+  }
+
+  .rental-dash-hero-left h1 {
+    font-size: 22px;
+  }
+
+  .rental-dash-stats-row {
+    width: 100%;
+  }
+
+  .rental-dash-stat-box {
+    flex: 1;
+    min-width: 55px;
+    padding: 10px 8px;
+  }
+
+  .rental-dash-hero > div:last-child {
+    width: 100%;
+    flex-direction: row !important;
+    align-items: stretch !important;
+  }
+
+  .rental-dash-add-btn, .rental-dash-inventory-btn {
+    flex: 1;
+  }
+
+  .rental-dash-content {
+    padding: 20px 16px;
+  }
+
+  .rental-dash-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rental-inventory-summary {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .rental-inventory-table-wrap {
+    overflow-x: scroll;
+  }
+
+  .rental-inventory-table {
+    min-width: 750px;
+  }
+
+  .rental-dash-tabs {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 4px;
+  }
+
+  .rental-dash-tab {
+    white-space: nowrap;
+  }
+
+  .rental-dash-cars-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 12px;
+  }
+}
+
+/* ===== RESPONSIVE — SMALL MOBILE ===== */
+@media (max-width: 400px) {
+  .rental-dash-hero-left h1 {
+    font-size: 18px;
+  }
+
+  .rental-dash-cars-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rental-inventory-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .rental-dash-stat-box h3 {
+    font-size: 16px;
+  }
+}

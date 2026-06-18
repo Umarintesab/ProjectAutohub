@@ -577,3 +577,122 @@
 .usedcar-empty-icon { font-size: 48px; margin-bottom: 16px; }
 .usedcar-empty h3 { font-size: 18px; color: #444; margin-bottom: 8px; }
 .usedcar-empty p { font-size: 14px; color: #999; margin-bottom: 20px; }
+
+/* ===== RESPONSIVE — TABLET ===== */
+@media (max-width: 1024px) {
+  .usedcar-stats-row {
+    flex-wrap: wrap;
+  }
+
+  .usedcar-car-images {
+    height: 150px;
+  }
+}
+
+/* ===== RESPONSIVE — MOBILE ===== */
+@media (max-width: 768px) {
+  .usedcar-nav {
+    padding: 0 16px;
+    flex-wrap: wrap;
+    height: auto;
+    min-height: 64px;
+    gap: 8px;
+  }
+
+  .usedcar-nav-right {
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 8px 0;
+  }
+
+  .usedcar-nav-name {
+    font-size: 12px;
+  }
+
+  .usedcar-notification {
+    margin: 16px;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  .usedcar-notif-actions {
+    width: 100%;
+  }
+
+  .usedcar-notif-actions button {
+    flex: 1;
+  }
+
+  .usedcar-hero {
+    flex-direction: column;
+    padding: 24px 16px;
+    align-items: flex-start;
+  }
+
+  .usedcar-hero-left h1 {
+    font-size: 24px;
+  }
+
+  .usedcar-stats-row {
+    width: 100%;
+  }
+
+  .usedcar-stat-box {
+    flex: 1;
+    min-width: 55px;
+    padding: 10px 8px;
+  }
+
+  .usedcar-add-btn {
+    width: 100%;
+  }
+
+  .usedcar-content {
+    padding: 20px 16px;
+  }
+
+  .usedcar-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .usedcar-tabs {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 4px;
+  }
+
+  .usedcar-tab {
+    white-space: nowrap;
+  }
+
+  .usedcar-car-images {
+    grid-template-columns: repeat(2, 1fr);
+    height: 200px;
+  }
+
+  .usedcar-car-top {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .usedcar-car-top > div:last-child {
+    text-align: left;
+  }
+}
+
+/* ===== RESPONSIVE — SMALL MOBILE ===== */
+@media (max-width: 400px) {
+  .usedcar-hero-left h1 {
+    font-size: 20px;
+  }
+
+  .usedcar-car-images {
+    grid-template-columns: 1fr 1fr;
+    height: 180px;
+  }
+
+  .usedcar-stat-box h3 {
+    font-size: 16px;
+  }
+}

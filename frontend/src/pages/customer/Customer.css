@@ -1115,3 +1115,193 @@
 .booking-refresh-btn:hover {
   background: rgba(230,81,0,0.2);
 }
+
+
+/* ===== RESPONSIVE — TABLET ===== */
+@media (max-width: 1024px) {
+  .hero-cards {
+    flex-wrap: wrap;
+  }
+
+  .cars-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .profiles-grid {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
+
+  .used-cars-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+
+  .rental-cars-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+
+  .bookings-panel {
+    width: 360px;
+  }
+}
+
+/* ===== RESPONSIVE — MOBILE ===== */
+@media (max-width: 768px) {
+  .dashboard-nav {
+    padding: 0 16px;
+    flex-wrap: wrap;
+    height: auto;
+    min-height: 64px;
+  }
+
+  .nav-links {
+    gap: 8px;
+    flex-wrap: wrap;
+    padding: 8px 0;
+  }
+
+  .nav-links span {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  .nav-links button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .dashboard-hero {
+    padding: 32px 16px;
+  }
+
+  .dashboard-hero h1 {
+    font-size: 26px;
+  }
+
+  .hero-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-card {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .featured-section {
+    padding: 24px 16px;
+  }
+
+  .section-header {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .cars-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 12px;
+  }
+
+  .page-header {
+    padding: 14px 16px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .page-header h2 {
+    font-size: 16px;
+  }
+
+  .page-content {
+    padding: 20px 16px;
+  }
+
+  .inner-hero {
+    flex-direction: column;
+    padding: 24px 16px;
+    text-align: center;
+  }
+
+  .inner-hero-text h2 {
+    font-size: 22px;
+  }
+
+  .inner-hero-stats {
+    justify-content: center;
+  }
+
+  .search-bar input {
+    max-width: 100%;
+  }
+
+  .profiles-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dealer-card, .agency-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .dealer-card-arrow {
+    display: none;
+  }
+
+  .used-cars-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 12px;
+  }
+
+  .rental-cars-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 12px;
+  }
+
+  .car-card, .used-car-card, .rental-car-card {
+    height: auto;
+  }
+
+  .car-card-img, .used-car-img, .rental-car-img {
+    height: 130px;
+  }
+
+  .bookings-panel {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .booking-item {
+    flex-direction: column;
+  }
+
+  .booking-img {
+    width: 100%;
+    height: 140px;
+  }
+
+  .buy-form {
+    max-width: 100%;
+  }
+}
+
+/* ===== RESPONSIVE — SMALL MOBILE ===== */
+@media (max-width: 400px) {
+  .dashboard-hero h1 {
+    font-size: 22px;
+  }
+
+  .cars-grid {
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  }
+
+  .used-cars-grid, .rental-cars-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-brand h2 {
+    font-size: 14px;
+  }
+
+  .car-info h4 {
+    font-size: 13px;
+  }
+}

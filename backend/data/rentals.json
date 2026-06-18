@@ -258,7 +258,12 @@
     "images": [
       "car5.jpg"
     ],
-    "status": "available"
+    "status": "pending",
+    "renterId": "1781617846701",
+    "renterName": "Moosa Raza",
+    "renterPhone": "03428514645",
+    "days": "2",
+    "transactionId": null
   },
   {
     "id": "4015",

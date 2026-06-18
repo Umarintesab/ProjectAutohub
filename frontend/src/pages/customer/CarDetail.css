@@ -610,3 +610,113 @@
   border-radius: 20px;
   border: 1px solid #a5d6a7;
 }
+
+/* ===== RESPONSIVE — TABLET ===== */
+@media (max-width: 1024px) {
+  .detail-body {
+    gap: 20px;
+    padding: 24px 20px;
+  }
+
+  .highlights-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .spec-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ===== RESPONSIVE — MOBILE ===== */
+@media (max-width: 768px) {
+  .detail-header {
+    padding: 14px 16px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .detail-header-title h2 {
+    font-size: 16px;
+  }
+
+  .detail-body {
+    flex-direction: column;
+    padding: 16px;
+    gap: 20px;
+  }
+
+  .detail-left, .detail-right {
+    width: 100%;
+    position: static;
+  }
+
+  .detail-main-img {
+    height: 240px;
+  }
+
+  .detail-thumbnails img {
+    width: 60px;
+    height: 45px;
+  }
+
+  .highlights-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .highlight-item {
+    padding: 10px 12px;
+  }
+
+  .detail-name-price h3 {
+    font-size: 18px;
+  }
+
+  .detail-price {
+    font-size: 24px;
+  }
+
+  .spec-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .action-summary {
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+  }
+
+  .transaction-id-box strong {
+    font-size: 16px;
+    word-break: break-all;
+  }
+
+  .contact-tags {
+    justify-content: center;
+  }
+}
+
+/* ===== RESPONSIVE — SMALL MOBILE ===== */
+@media (max-width: 400px) {
+  .detail-main-img {
+    height: 200px;
+  }
+
+  .highlights-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .spec-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-price {
+    font-size: 20px;
+  }
+
+  .rental-price-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+}

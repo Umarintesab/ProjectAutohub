@@ -4,6 +4,9 @@ import axios from 'axios';
 import carImage from '../assets/car.jpg';
 import './Auth.css';
 
+// ✅ API URL - uses Railway backend
+const API_URL = process.env.REACT_APP_API_URL || 'https://projectautohub-production-2c65.up.railway.app';
+
 function Signup() {
   const navigate = useNavigate();
   const [step, setStep] = useState(1);
@@ -14,6 +17,7 @@ function Signup() {
     houseNo: '', street: '', area: '', city: '', country: 'Pakistan'
   });
   const [error, setError] = useState('');
+  const [loading, setLoading] = useState(false);
 
   const roles = [
     { value: 'customer', label: '👤 Customer', desc: 'Buy or rent cars' },
@@ -25,23 +29,54 @@ function Signup() {
   const validatePhone = (p) => /^03[0-9]{9}$/.test(p);
   const validateCNIC = (c) => /^[0-9]{5}-[0-9]{7}-[0-9]{1}$/.test(c);
   const validateEmail = (e) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e);
+  
   const handleChange = (e) => setFormData({ ...formData, [e.target.name]: e.target.value });
 
   const handleSubmit = async () => {
+    setError('');
+    setLoading(true);
+
+    // Validation
     if (!formData.name || !formData.email || !formData.password || !formData.phone) {
-      setError('Please fill all required fields'); return;
+      setError('Please fill all required fields');
+      setLoading(false);
+      return;
     }
-    if (!validateEmail(formData.email)) { setError('Invalid email format'); return; }
-    if (!validatePhone(formData.phone)) { setError('Phone: 03XXXXXXXXX format required'); return; }
+    if (!validateEmail(formData.email)) {
+      setError('Invalid email format');
+      setLoading(false);
+      return;
+    }
+    if (!validatePhone(formData.phone)) {
+      setError('Phone: 03XXXXXXXXX format required');
+      setLoading(false);
+      return;
+    }
     if ((role === 'usedcar' || role === 'rental') && formData.cnic && !validateCNIC(formData.cnic)) {
-      setError('CNIC: XXXXX-XXXXXXX-X format required'); return;
+      setError('CNIC: XXXXX-XXXXXXX-X format required');
+      setLoading(false);
+      return;
     }
+
     const address = `House ${formData.houseNo}, Street ${formData.street}, ${formData.area}, ${formData.city}, ${formData.country}`;
+    
     try {
-      await axios.post('http://localhost:5000/api/auth/signup', { ...formData, role, address });
-      navigate('/login');
+      // ✅ UPDATED: Using Railway URL
+      const response = await axios.post(`${API_URL}/api/auth/signup`, { 
+        ...formData, 
+        role, 
+        address 
+      });
+
+      if (response.status === 201) {
+        alert('Account created successfully! Please login.');
+        navigate('/login');
+      }
     } catch (err) {
-      setError(err.response?.data?.message || 'Signup failed');
+      console.error('Signup error:', err);
+      setError(err.response?.data?.message || 'Signup failed. Please try again.');
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -76,10 +111,10 @@ function Signup() {
               <h3>Your <span>Details</span></h3>
               <p className="auth-subtitle">Complete your registration</p>
               <div className="form-fields">
-                <input name="name" placeholder="Full Name" onChange={handleChange} />
-                <input name="email" placeholder="Email Address" type="email" onChange={handleChange} />
-                <input name="password" placeholder="Password" type="password" onChange={handleChange} />
-                <input name="phone" placeholder="Phone (03XXXXXXXXX)" onChange={handleChange} />
+                <input name="name" placeholder="Full Name" onChange={handleChange} required />
+                <input name="email" placeholder="Email Address" type="email" onChange={handleChange} required />
+                <input name="password" placeholder="Password" type="password" onChange={handleChange} required />
+                <input name="phone" placeholder="Phone (03XXXXXXXXX)" onChange={handleChange} required />
                 {role === 'dealer' && (
                   <input name="brandName" placeholder="Brand Name (e.g. Toyota)" onChange={handleChange} />
                 )}
@@ -98,7 +133,13 @@ function Signup() {
                 </div>
                 <input name="country" placeholder="Country" defaultValue="Pakistan" onChange={handleChange} />
                 {error && <p className="error-msg">{error}</p>}
-                <button className="btn-submit" onClick={handleSubmit}>Create Account</button>
+                <button 
+                  className="btn-submit" 
+                  onClick={handleSubmit}
+                  disabled={loading}
+                >
+                  {loading ? 'Creating Account...' : 'Create Account'}
+                </button>
                 <button className="btn-back" onClick={() => setStep(1)}>← Back</button>
               </div>
             </>
